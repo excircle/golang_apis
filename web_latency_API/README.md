@@ -69,7 +69,9 @@ func main() {
 }
 ```
 
-data.go
+### data.go
+
+Again, this is just a simple slice which is sourced into the main/findFastest function.
 ```go
 package mirrors
 
