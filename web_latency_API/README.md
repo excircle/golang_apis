@@ -1,6 +1,6 @@
-# Site Latency API
+# "Site Latency API"
 
-This folder contains source code for a simply Go-based API which parses a list of Debian Linux mirrors and returns a string value explaining which mirror has the lowest latency.
+This folder contains source code for a simple Go-based API which parses a list of Debian Linux mirrors and returns a string value explaining which mirror has the lowest latency.
 
 ## API Anatomy
 
