@@ -4,7 +4,7 @@ This folder contains source code for a simply Go-based API which parses a list o
 
 ## API Anatomy
 
-### main.go
+### <a href="https://github.com/excircle/golang_apis/blob/master/web_latency_API/main.go">main.go</a>
 
 The main is relatively simple.
 
@@ -69,7 +69,7 @@ func main() {
 }
 ```
 
-### data.go
+### <a href="https://github.com/excircle/golang_apis/blob/master/web_latency_API/data.go">data.go</a>
 
 Again, this is just a simple slice which is sourced into the main/findFastest function.
 ```go
