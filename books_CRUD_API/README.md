@@ -2,18 +2,18 @@
 
 This folder contains source code for a simple Go-based API which demonstrates basic CRUD functionality. This API utilizes "github.com/gorilla/mux" for routing capabilities.
 
-When initialized, this API will launch a simple web server, allows you to visit the below URL list to receive variable API responses.
+When initialized, this API will launch a simple web server which allows you to visit the below URLs and see their respective API response.
 
 ## API Anatomy
 
 The API responses are as follows:
 
 ```
-    "http://127.0.0.1:8000/books" - getBooks - GET Request to fetch all books
-    "http://127.0.0.1:8000/books/{id}" - getBook - GET Request to fetch single book
-    "http://127.0.0.1:8000/books" - addBook - POST Request to add book
-    "http://127.0.0.1:8000/books" - updateBook - PUT Request to alter a book
-    "http://127.0.0.1:8000/books/{id}" - removeBook - DELETE Request to remove a book
+    getBooks -  "http://127.0.0.1:8000/books" - GET Request to fetch all books
+    getBook -  "http://127.0.0.1:8000/books/{id}" - GET Request to fetch single book
+    addBook -  "http://127.0.0.1:8000/books" - POST Request to add book
+    updateBook -  "http://127.0.0.1:8000/books" - PUT Request to alter a book
+    removeBook -  "http://127.0.0.1:8000/books/{id}" - DELETE Request to remove a book
 ```
 
 ### <a href="https://github.com/excircle/golang_apis/blob/master/books_CRUD_API/main.go">main.go</a>

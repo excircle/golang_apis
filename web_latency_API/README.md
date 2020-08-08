@@ -1,12 +1,14 @@
 # "Site Latency API"
 
-This folder contains source code for a simple Go-based API which parses a list of Debian Linux mirrors and returns a string value explaining which mirror has the lowest latency.
+This folder contains source code for a Go-based API which parses a list of Debian Linux mirrors and returns the URL which can be visited with lowest latency.
 
 ## API Anatomy
 
 ### <a href="https://github.com/excircle/golang_apis/blob/master/web_latency_API/main.go">main.go</a>
 
-The main is relatively simple.
+2 files. One for the main, one for the data.
+
+The main is relatively small but utilizes highly useful Goroutines to act in parallel.
 
 1 custom struct (response).
 1 custom Function utilizing a Goroutine (findFastest).
