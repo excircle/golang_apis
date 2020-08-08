@@ -4,6 +4,8 @@ This folder contains source code for a simple Go-based API which demonstrates ba
 
 When initialized, this API will launch a simple web server which allows you to visit the below URLs and see their respective API response.
 
+For the API code "standalone" branch, the API data is stored as a slice of custom struct types "Book."
+
 ## API Anatomy
 
 The API responses are as follows:
@@ -34,6 +36,15 @@ curl --request GET http://localhost:8000/books/3
 curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"id": 7,"title": "C is really old","author": "Mr.C","year": "2016"}' \
+  http://localhost:8000/books
+```
+
+#### updateBook curl Example
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request PUT \
+  --data '{"id": 2,"title": "Rust Update","author": "Mr.Rust","year": "2016"}' \
   http://localhost:8000/books
 ```
 
