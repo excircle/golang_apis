@@ -16,6 +16,27 @@ The API responses are as follows:
     removeBook -  "http://127.0.0.1:8000/books/{id}" - DELETE Request to remove a book
 ```
 
+#### getBooks curl Example
+
+```bash
+curl --request GET http://localhost:8000/books
+```
+
+#### getBook curl Example
+
+```bash
+curl --request GET http://localhost:8000/books/3
+```
+
+#### addBook curl Example
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"id": 7,"title": "C is really old","author": "Mr.C","year": "2016"}' \
+  http://localhost:8000/books
+```
+
 ### <a href="https://github.com/excircle/golang_apis/blob/master/books_CRUD_API/main.go">main.go</a>
 
 ```go
