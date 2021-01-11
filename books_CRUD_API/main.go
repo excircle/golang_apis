@@ -38,7 +38,7 @@ func addBook(w http.ResponseWriter, r *http.Request) {
     json.NewDecoder(r.Body).Decode(&book)
     books = append(books, book)
     json.NewEncoder(w).Encode(books)
-    log.Println(book)
+    log.Printf("ID: %d, Title: '%s' was added", book.ID, book.Title)
 }
 
 func updateBook(w http.ResponseWriter, r *http.Request) {
@@ -50,13 +50,26 @@ func updateBook(w http.ResponseWriter, r *http.Request) {
 
     for i, item := range books {
         if item.ID == book.ID {
+            log.Printf("ID: %d, Title: '%s' was updated", item.ID, item.Title)
             books[i] = book
+            log.Printf("ID: %d is now -> '%s'", item.ID, book.Title)
         }
     }
 }
 
 func removeBook(w http.ResponseWriter, r *http.Request) {
     log.Println("removeBook is called")
+
+    params := mux.Vars(r)
+
+    id, _ := strconv.Atoi(params["id"])
+
+    for i, item := range books {
+        if item.ID == id {
+            log.Printf("ID: %d, Title: '%s' was deleted", item.ID, item.Title)
+            books = append(books[:i], books[i+1:]...)
+        }
+    }
 }
 
 var books []Book

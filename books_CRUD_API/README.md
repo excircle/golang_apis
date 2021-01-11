@@ -48,6 +48,12 @@ curl --header "Content-Type: application/json" \
   http://localhost:8000/books
 ```
 
+#### deleteBook curl Example
+
+```bash
+curl --request DELETE http://localhost:8000/books/3
+```
+
 ### <a href="https://github.com/excircle/golang_apis/blob/master/books_CRUD_API/main.go">main.go</a>
 
 ```go
