@@ -5,7 +5,28 @@ Repository for Examples of Golang APIs. These examples are designed to be cloned
 
 #### API & HTTP Fundamentals
 
-<details><summary>Cross-Origin Resource Sharing</summary>
+<details><summary>API Dictionary</summary>
+<p>
+
+A list of helpful terms regarding APIs
+
+### Acronyms
+
+<b>SPA</b> - Single Page Application </br>
+<b>SOA</b> - Service-Oriented Architecture </br>
+<b>ROA</b> - Response-Oriented Architecture </br>
+<b>OAS</b> - OpenAPI Specification</br>
+
+### Key Words
+
+<b>Multiplexer</b> - An entity that matches a given URL to a registered pattern</br>
+<b>Middleware</b> - An entity that matches a given URL to a registered pattern</br>
+<b>Closure Function</b> - A closure function returns another function</br>
+closure function
+<p>
+</details>
+
+<details><summary>What Is 'Cross-Origin Resource Sharing?'</summary>
 <p>
 
 <b>Cross-Origin Resource Sharing (CORS)</b> is method of authorizing a calling client (I.E your code or application) to receive resources from a given host (targeted API).
